@@ -4,6 +4,7 @@ public class Main {
         Gato gato1 = new Gato("Gatito", "Rafeiro", "Amarelo", 8, 5);
         Cao cao1 = new Cao("bolinhas", "Rafeiro", "Branco", 5, 9);
         Cao cao2 = new Cao("bolao", "Rafeiro", "Branco", 5, 9);
+        Comida racao1 = new Comida("Friskies", 5,1);
 
         Animal[] animais = {gato1, cao1, cao2};
 
@@ -25,7 +26,9 @@ public class Main {
 
         System.out.print("o " + gato1.nome + " faz ");
         gato1.miar();
+        gato1.comer(racao1);
         System.out.println(gato1.nome + " - Expectativa de vida: " + gato1.calculaExpectativaVida() + " anos");
+        System.out.println("O peso atual do " + gato1.nome + " é: " + gato1.comer);
 
         System.out.print("o " + cao1.nome + " faz ");
         cao1.ladrar();

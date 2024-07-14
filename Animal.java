@@ -1,4 +1,5 @@
 public abstract class Animal {
+    public String comer;
     String nome;
     String raca;
     String cor;
@@ -23,10 +24,19 @@ public abstract class Animal {
         System.out.println("miau");
     }
 
+    public void comer(Comida comida){
+        int peso_comido = (int) (comida.quantidade + peso);
+        System.out.println(this.nome + " comeu " + comida.nome + " que pesa " + comida.quantidade + " kg");
+        System.out.println("Peso atual: " + peso_comido);
+
+    }
+
     public abstract double calculaExpectativaVida();
 }
 
 class Gato extends Animal {
+    
+
     public Gato(String nome, String raca, String cor, int idade, double peso) {
         super(nome, raca, cor, idade, peso);
     }
