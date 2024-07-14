@@ -20,7 +20,6 @@ public class Main {
                 maiorIdade = animal;
             }
         }
-
         System.out.println("O animal com o maior nome é " + maiorNome.nome);
         System.out.println("O animal com a maior idade é " + maiorIdade.idade);
 

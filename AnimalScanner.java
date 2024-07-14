@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class AnimalScanner {
@@ -26,7 +29,18 @@ public class AnimalScanner {
             total += AnimaisPesos[i];
         }
         double averageGrade = (double) total / numAnimais;
-
         System.out.println("\nPeso medio: " + averageGrade);
+
+        System.out.println("\nPeso dos Animais em ordem decrescente:");
+        Arrays.sort(AnimaisPesos);
+        for (int i = 0; i < numAnimais; i++) {
+            System.out.println(AnimaisNomes[i] + ": " + AnimaisPesos[i]);
+        }
+        System.out.println("\nPeso dos Animais em ordem decrescente:");
+        for (int i = numAnimais - 1; i >= 0; i--) {
+            System.out.println(AnimaisNomes[i] + ": " + AnimaisPesos[i]);
+        }
     }
+
+
 }
