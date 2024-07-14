@@ -66,4 +66,6 @@ public double calculaExpectativaVida() {
 
     return expectativa;
 }
+
+
 }
