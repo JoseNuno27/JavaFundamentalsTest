@@ -1,3 +1,5 @@
+package Scanners;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
@@ -9,10 +11,13 @@ public class AnimalScanner {
         System.out.print("Insira o numero de animais: ");
         int numAnimais = scanner.nextInt();
         scanner.nextLine();
+
         String[] AnimaisNomes = new String[numAnimais];
         int[] AnimaisPesos = new int[numAnimais];
+
+
         for (int i = 0; i < numAnimais; i++) {
-            System.out.print("Insira o Nome do Animal " + (i + 1) + ": ");
+
             AnimaisNomes[i] = scanner.nextLine();
             System.out.print("Insira o peso do animal " + (i + 1) + ": ");
             AnimaisPesos[i] = scanner.nextInt();
