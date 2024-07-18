@@ -15,6 +15,13 @@ public class Main {
             }
         }
 
+        Animal maiorPeso = animais[0];
+        for (Animal animal : animais) {
+            if (animal.peso > maiorPeso.peso) {
+                maiorPeso = animal;
+            }
+        }
+
         Animal maiorIdade = animais[0];
         for (Animal animal : animais) {
             if (animal.idade > maiorIdade.idade) {
@@ -23,6 +30,12 @@ public class Main {
         }
         System.out.println("O animal com o maior nome é " + maiorNome.nome);
         System.out.println("O animal com a maior idade é " + maiorIdade.idade);
+        System.out.println("Os animais com o maior peso são:");
+        for (Animal animal : animais) {
+            if (animal.peso == maiorPeso.peso) {
+                System.out.println(animal.nome + " - Peso: " + animal.peso);
+            }
+        }
 
         System.out.print("o " + gato1.nome + " faz ");
         gato1.miar();

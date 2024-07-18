@@ -17,7 +17,7 @@ public class AnimalScanner {
 
 
         for (int i = 0; i < numAnimais; i++) {
-
+            System.out.print("Insira o nome do Animal " + (i + 1) + ": ");
             AnimaisNomes[i] = scanner.nextLine();
             System.out.print("Insira o peso do animal " + (i + 1) + ": ");
             AnimaisPesos[i] = scanner.nextInt();
