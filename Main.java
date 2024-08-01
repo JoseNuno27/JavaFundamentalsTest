@@ -23,13 +23,21 @@ public class Main {
         }
 
         Animal maiorIdade = animais[0];
+        Animal menorIdade = animais[0];
         for (Animal animal : animais) {
             if (animal.idade > maiorIdade.idade) {
                 maiorIdade = animal;
             }
+            else if (animal.idade < menorIdade.idade) {
+                menorIdade = animal;
+            }
         }
+
+
+
         System.out.println("O animal com o maior nome é " + maiorNome.nome);
-        System.out.println("O animal com a maior idade é " + maiorIdade.idade);
+        System.out.println("O animal com a maior idade é " + maiorIdade.idade + " e o seu nome é" + maiorIdade.nome);
+        System.out.println(STR."O animal com a menor idade é \{menorIdade.idade} e os seus nomes são\{menorIdade.nome}");
         System.out.println("Os animais com o maior peso são:");
         for (Animal animal : animais) {
             if (animal.peso == maiorPeso.peso) {
